@@ -2257,6 +2257,10 @@ endif
 
 config_host_data = configuration_data()
 
+if get_option('tdx').enabled()
+  config_host_data.set('CONFIG_TDX', 1)
+endif
+
 config_host_data.set('CONFIG_HAVE_RUST', have_rust)
 audio_drivers_selected = []
 if have_system

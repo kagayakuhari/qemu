@@ -252,6 +252,8 @@ option('vnc_sasl', type : 'feature', value : 'auto',
        description: 'SASL authentication for VNC server')
 option('vte', type : 'feature', value : 'auto',
        description: 'vte support for the gtk UI')
+option('tdx', type : 'feature', value : 'auto',
+       description: 'Intel TDX support')
 
 # GTK Clipboard implementation is disabled by default, since it may cause hangs
 # of the guest VCPUs. See gitlab issue 1150:
